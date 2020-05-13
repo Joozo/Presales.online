@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <stl:include file="@/include/meta.html"></stl:include>
+</head>
+
+<body>
+    <stl:include file="@/include/header.html"></stl:include>
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <stl:include file="@/include/loc.html"></stl:include>
+            <div class="uk-background-default uk-border-rounded uk-box-shadow-small">
+                <div class="uk-container uk-container-xsmall uk-padding-large">
+                    <article class="uk-article">
+                        <h1 class="uk-article-title">{channel.title}</h1>
+                        <div class="uk-article-content">
+                            <p class="uk-text-lead uk-text-muted">{channel.description}
+                            </p>
+                            <div class="tm-timeline uk-margin-large-top">
+                                <stl:contents order="addDate">
+                                    <div class="tm-timeline-entry">
+                                        <div class="tm-timeline-time">
+                                            <h5>{content.adddate}</h5>
+                                        </div>
+                                        <div class="tm-timeline-body">
+                                            <h3 class="uk-flex uk-flex-middle">Version {content.title}<span class="uk-label uk-margin-small-left uk-label-{content.Source}">{content.Author}</span>
+                                            </h3>
+                                            <ul class="uk-list">
+                                                <li>{content.summary}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </stl:contents>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <stl:include file="@/include/nav.html"></stl:include>
+    <stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>
