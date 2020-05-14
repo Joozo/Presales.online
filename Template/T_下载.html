@@ -42,16 +42,11 @@
                                 <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                                     <div class="uk-grid-small" data-uk-grid>
                                         <div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
-                                            <stl:if Type="isColor" value="true">
-                                                <stl:yes>
-                                                    <span data-uk-icon="icon: file-text; ratio: 2.6"></span>
-                                                </stl:yes>
-                                                <stl:no><span data-uk-icon="icon: file-pdf; ratio: 2.6"></span></stl:no>
-                                            </stl:if>
+                                           <span data-uk-icon="icon: {content.icontype}; ratio: 2.6"></span>
                                         </div>
                                         <div class="uk-width-expand">
                                             <h3 class="uk-card-title uk-margin-remove">
-                                                {content.title}<a class="uk-button uk-button-small" uk-tooltip="资料输出方：{content.author}">版本：V {content.subtitle}</a>
+                                                {content.title}<a class="uk-button uk-button-small" uk-tooltip="资料输出方：{content.author}">版本:V{content.subtitle}</a>
                                             </h3>
                                             <p class="uk-text-muted uk-margin-remove uk-text-small">
                                                 更新时间：<stl:content type="adddate" formatString="yyyy年MM月dd日 HH时mm分ss秒"></stl:content>
@@ -87,16 +82,11 @@
                                 <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                                     <div class="uk-grid-small" data-uk-grid>
                                         <div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle">
-                                            <stl:if Type="isColor" value="true">
-                                                <stl:yes>
-                                                    <span data-uk-icon="icon: file-text; ratio: 2.6"></span>
-                                                </stl:yes>
-                                                <stl:no><span data-uk-icon="icon: file-pdf; ratio: 2.6"></span></stl:no>
-                                            </stl:if>
+                                            <span data-uk-icon="icon: {content.icontype}; ratio: 2.6"></span>
                                         </div>
                                         <div class="uk-width-expand">
                                             <h3 class="uk-card-title uk-margin-remove">
-                                                {content.title}<a class="uk-button uk-button-small" uk-tooltip="资料输出方：{content.author}">版本：V {content.subtitle}</a>
+                                                {content.title}<a class="uk-button uk-button-small" uk-tooltip="资料输出方：{content.author}">版本:V{content.subtitle}</a>
                                             </h3>
                                             <p class="uk-text-muted uk-margin-remove uk-text-small">
                                                 更新时间：<stl:content type="adddate" formatString="yyyy年MM月dd日 HH时mm分ss秒"></stl:content>
