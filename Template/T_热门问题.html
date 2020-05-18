@@ -19,9 +19,8 @@
                     <p class="uk-text-lead uk-text-muted uk-margin-small-top">{channel.description}</p>
                 </div>
             </div>
-       
             <div class="uk-margin-medium-top">
-                <stl:pagecontents pagenum="10" order="addDateback" channelIndex="产品大全" scope="all" isHot="true">
+                <stl:pagecontents pagenum="7" order="addDateback" channelIndex="产品大全" scope="all" isHot="true">
                     <div class="uk-card uk-card-category uk-card-default uk-card-hover uk-card-body uk-inline uk-border-rounded uk-width-1-1">
                         <a class="uk-position-cover" href="{stl:a}"></a>
                         <h3 class="uk-card-title uk-margin-remove uk-text-primary">
@@ -56,27 +55,27 @@
                 <stl:pageItems>
                     <stl:pageItem type="PreviousPage">
                         <stl:yes>
-                            <a class="uk-button uk-button-default uk-button-small" href="{Current.Url}">上一页</a>
+                            <a class="uk-button uk-button-default" href="{Current.Url}">上一页</a>
                         </stl:yes>
-                        <stl:no><button class="uk-button uk-button-default uk-button-small" disabled>上一页</button>
+                        <stl:no><button class="uk-button uk-button-default" disabled>上一页</button>
                         </stl:no>
                     </stl:pageItem>
                     <stl:pageItem type="PageNavigation">
                         <div class="uk-button-group">
                             <stl:yes>
-                                <a class="uk-button uk-button-default uk-button-small" href="{Current.Url}">{Current.Num}</a>
+                                <a class="uk-button uk-button-primary" href="{Current.Url}" style="margin-left: 3px;">{Current.Num}</a>
                             </stl:yes>
                             <stl:no>
-                                <a class="uk-button uk-button-primary uk-button-small" href="javascript:;" disabled>{Current.Num}</a>
+                                <button class="uk-button uk-button-default" href="javascript:;" disabled>{Current.Num}</button>
                             </stl:no>
                         </div>
                     </stl:pageItem>
                     <stl:pageItem type="NextPage">
                         <stl:yes>
-                            <a class="uk-button uk-button-default uk-button-small" href="{Current.Url}">下一页</a>
+                            <a class="uk-button uk-button-primary" href="{Current.Url}">下一页</a>
                         </stl:yes>
                         <stl:no>
-                            <button class="uk-button uk-button-default uk-button-small" disabled>下一页</button>
+                            <button class="uk-button uk-button-default" disabled>下一页</button>
                         </stl:no>
                     </stl:pageItem>
                 </stl:pageItems>
