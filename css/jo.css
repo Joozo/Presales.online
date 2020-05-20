@@ -36,15 +36,17 @@
 .jo-mar {
     margin-top: 10px !important;
 }
+
 .jo-index .uk-accordion-content {
-	padding: 0 !important;
+    padding: 0 !important;
     border: none !important;
     background-color: none !important;
 }
+
 .uk-grid-index {
     margin-left: 0 !important;
-    
 }
+
 .uk-avatar {
     width: 160px;
 }
