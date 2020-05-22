@@ -50,3 +50,9 @@
 .uk-avatar {
     width: 160px;
 }
+.jo-font {
+    font-size: 1.2em !important;
+}
+.jo-page .uk-button {
+    padding: 2px 7px !important;
+}

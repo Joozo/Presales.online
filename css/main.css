@@ -1,80 +1,8 @@
 @charset "UTF-8";
 
-/* ========================================================================
-[Table of contents]
-
-Components:
-
-    1.      Base
-    2.      Link
-    3.      Heading
-    4.      Divider
-    5.      List
-    6.      Description list
-    7.      Table
-    8.      Icon
-    9.      Form Range
-    10.     Form
-    11.     Button
-    12.     Section
-    13.     Container
-    14.     Grid
-    15.     Tile
-    16.     Card
-    17.     Close
-    18.     Spinner
-    19.     Totop
-    20.     Marker
-    21.     Alert
-    22.     Badge
-    23.     Label
-    24.     Overlay
-    25.     Article
-    26.     Comment
-    27.     Search
-    28.     Nav
-    29.     Navbar
-    30.     Subnav
-    31.     Breadcrumb
-    32.     Pagination
-    33.     Tab
-    34.     Slidenav
-    35.     Dotnav
-    36.     Accordion
-    37.     Drop
-    38.     Dropdown
-    39.     Modal
-    40.     Lightbox
-    41.     Slideshow
-    42.     Sticky
-    43.     Off-canvas
-    44.     Notification
-    45.     Tooltip
-    46.     Progress
-    47.     Sortable
-    48.     Countdown
-    49.     Text
-    50.     Cover
-    51.     Flex
-    52.     Utility
-    53.     Position
-    54.     Inverse
-    55.     Print
-    56.     Responsive
-
-*/
-/* ========================================================================
-   Component: Base
- ========================================================================== */
-/*
- * 1. Set `font-size` to support `rem` units
- *    Not using `font` property because a leading hyphen (e.g. -apple-system) causes the font to break in IE11 and Edge
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- * 3. Style
- */
 html {
     /* 1 */
-    font-family: "HanHei SC",PingHei,"PingFang SC","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    font-family: "HanHei SC", PingHei, "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
@@ -85,26 +13,15 @@ html {
     color: #67607c;
 }
 
-/*
- * Remove the margin in all browsers.
- */
 body {
     margin: 0;
 }
 
-/* Links
- ========================================================================== */
-/*
- * Remove the outline on focused links when they are also active or hovered
- */
 a:active,
 a:hover {
     outline: none;
 }
 
-/*
- * Style
- */
 a,
 .uk-link {
     color: #1e87f0;
@@ -120,12 +37,6 @@ a:hover,
     text-decoration: underline;
 }
 
-/* Text-level semantics
- ========================================================================== */
-/*
- * 1. Add the correct text decoration in Edge.
- * 2. The shorthand declaration `underline dotted` is not supported in Safari.
- */
 abbr[title] {
     /* 1 */
     text-decoration: underline dotted;
@@ -133,19 +44,11 @@ abbr[title] {
     -webkit-text-decoration-style: dotted;
 }
 
-/*
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 b,
 strong {
     font-weight: bolder;
 }
 
-/*
- * 1. Consolas has a better baseline in running text compared to `Courier`
- * 2. Correct the odd `em` font sizing in all browsers.
- * 3. Style
- */
 :not(pre)>code,
 :not(pre)>kbd,
 :not(pre)>samp {
@@ -160,47 +63,29 @@ strong {
     background: #f9f9fc;
 }
 
-/*
- * Emphasize
- */
 em {
     color: #f0506e;
 }
 
-/*
- * Insert
- */
 ins {
     background: #ffd;
     color: #67607c;
     text-decoration: none;
 }
 
-/*
- * Mark
- */
 mark {
     background: #ffd;
     color: #67607c;
 }
 
-/*
- * Quote
- */
 q {
     font-style: italic;
 }
 
-/*
- * Add the correct font size in all browsers.
- */
 small {
     font-size: 80%;
 }
 
-/*
- * Prevents `sub` and `sup` affecting `line-height` in all browsers.
- */
 sub,
 sup {
     font-size: 75%;
@@ -217,11 +102,6 @@ sub {
     bottom: -0.25em;
 }
 
-/* Embedded content
- ========================================================================== */
-/*
- * Remove the gap between embedded content and the bottom of their containers.
- */
 audio,
 canvas,
 iframe,
@@ -231,12 +111,6 @@ video {
     vertical-align: middle;
 }
 
-/*
- * 1. Add responsiveness.
- * 2. Auto-scale the height. Only needed if `height` attribute is present.
- * 3. Corrects responsive `max-width` behavior if padding and border are used.
- * 4. Exclude SVGs for IE11 because they don't preserve their aspect ratio.
- */
 canvas,
 img,
 video {
@@ -264,11 +138,6 @@ svg:not(:root) {
     overflow: hidden;
 }
 
-/*
- * 1. Fix lazy loading images if parent element is set to `display: inline` and has `overflow: hidden`.
- * 2. Hide `alt` text for lazy loading images.
- * Note: Selector for background while loading img[data-src*='.jpg'][src*='data:image'] { background: grey; }
- */
 img:not([src]) {
     /* 1 */
     min-width: 1px;
@@ -276,19 +145,10 @@ img:not([src]) {
     visibility: hidden;
 }
 
-/*
- * Iframe
- * Remove border in all browsers
- */
 iframe {
     border: 0;
 }
 
-/* Block elements
- ========================================================================== */
-/*
- * Margins
- */
 p,
 ul,
 ol,
@@ -4023,7 +3883,7 @@ select.uk-form-width-xsmall {
  * Success
  */
 .uk-label-success {
-    background-color: #403e56;
+    background-color: #32d296;
     color: #fff;
 }
 
