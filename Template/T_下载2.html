@@ -1,1 +1,89 @@
-<!DOCTYPE html> <html lang="en-gb" dir="ltr"> <head> <stl:include file="@/include/meta.html"></stl:include> </head> <body> <stl:include file="@/include/header.html"></stl:include> <div class="uk-section uk-section-muted"> <div class="uk-container"> <stl:include file="@/include/loc.html"></stl:include> <div class="uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-1-2@s uk-margin-top" uk-grid> <div class="uk-card-media-left  uk-card-secondary uk-cover-container uk-width-1-3"> <img src="{channel.imageUrl}" alt="" uk-cover> <canvas width="600" height="200"></canvas> </div> <div class="uk-width-2-3"> <div class="uk-card-body"> <h3 class="uk-card-title uk-link-heading">{channel.title}</h3> 共<span class="uk-badge"> <stl:count type="Contents"></stl:count> </span>个文件 </div> </div> </div> <div class="uk-child-width-1-2@m uk-grid-match" uk-grid> <stl:contents scope="all"> <stl:itemTemplate type="Item"> <div> <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true"> <div class="uk-card-badge uk-label">版本:V{content.subtitle}</div> <div class="uk-grid-small" data-uk-grid> <div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle"> <span data-uk-icon="icon: {content.icontype}; ratio: 2.6"></span> </div> <div class="uk-width-expand"> <h3 class="uk-card-title uk-margin-remove"> <span uk-tooltip="此版本作者：{content.author}"> {content.title} </span> </h3> <p class="uk-text-muted uk-margin-remove uk-text-small"> 时间：<stl:content type="adddate" formatString="yyyy年MM月dd日 HH时mm分ss秒"></stl:content> </p> </div> </div> <p>下载链接：<a href="{content.source}" uk-tooltip="请先联系售前团队获得下载密码~" target="_black">{content.source} </a></p> <a href="#modal-center-{content.ID}" uk-toggle> <stl:image></stl:image> </a> <div id="modal-center-{content.ID}" class="uk-flex-top" uk-modal> <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"> <button class="uk-modal-close-default" type="button" uk-close></button> <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow> <ul class="uk-slideshow-items"> <stl:each type="imageUrl"> <li> <stl:image alt="" uk-cover uk-img="target: !.uk-slideshow-items" /> </li> </stl:each> </ul> <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a> <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a> </div> </div> </div> </div> </div> </stl:itemTemplate> <stl:itemTemplate type="AlternatingItem"> <div> <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true"> <div class="uk-card-badge uk-label uk-label-success">版本:V{content.subtitle}</div> <div class="uk-grid-small" data-uk-grid> <div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle"> <span data-uk-icon="icon: {content.icontype}; ratio: 2.6"></span> </div> <div class="uk-width-expand"> <h3 class="uk-card-title uk-margin-remove"> <span uk-tooltip="此版本作者：{content.author}"> {content.title} </span> </h3> <p class="uk-text-muted uk-margin-remove uk-text-small"> 时间：<stl:content type="adddate" formatString="yyyy年MM月dd日 HH时mm分ss秒"></stl:content> </p> </div> </div> <p>下载链接：<a href="{content.source}" uk-tooltip="请先联系售前团队获得下载密码~" target="_black">{content.source} </a></p> <a href="#modal-center-{content.ID}" uk-toggle> <stl:image></stl:image> </a> <div id="modal-center-{content.ID}" class="uk-flex-top" uk-modal> <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"> <button class="uk-modal-close-default" type="button" uk-close></button> <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow> <ul class="uk-slideshow-items"> <stl:each type="imageUrl"> <li> <stl:image alt="" uk-cover uk-img="target: !.uk-slideshow-items" /> </li> </stl:each> </ul> <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a> <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a> </div> </div> </div> </div> </div> </stl:itemTemplate> </stl:contents> </div> </div> </div> </div> <stl:include file="@/include/nav.html"></stl:include> <stl:include file="@/include/footer.html"></stl:include> </body> </html>
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <stl:include file="@/include/meta.html"></stl:include>
+</head>
+
+<body>
+    <stl:include file="@/include/header.html"></stl:include>
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <stl:include file="@/include/loc.html"></stl:include>
+            <div class="uk-placeholder uk-text-center">共<span class="uk-label">
+                    <stl:count type="Contents"></stl:count>
+                </span>个文件</div>
+            <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                <stl:contents scope="all">
+                    <stl:itemTemplate type="Item">
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                                <div class="uk-card-badge uk-label">版本:V{content.subtitle}</div>
+                                <div class="uk-grid-small" data-uk-grid>
+                                    <div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle"> <span data-uk-icon="icon: {content.icontype}; ratio: 2.6"></span> </div>
+                                    <div class="uk-width-expand">
+                                        <h3 class="uk-card-title uk-margin-remove"> <span uk-tooltip="此版本作者：{content.author}"> {content.title} </span> </h3>
+                                        <p class="uk-text-muted uk-margin-remove uk-text-small"> 时间：<stl:content type="adddate" formatString="yyyy年MM月dd日 HH时mm分ss秒"></stl:content>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>下载链接：<a href="{content.source}" uk-tooltip="请先联系售前团队获得下载密码~" target="_black">{content.source} </a></p> <a href="#modal-center-{content.ID}" uk-toggle>
+                                    <stl:image></stl:image>
+                                </a>
+                                <div id="modal-center-{content.ID}" class="uk-flex-top" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"> <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                                            <ul class="uk-slideshow-items">
+                                                <stl:each type="imageUrl">
+                                                    <li>
+                                                        <stl:image alt="" uk-cover uk-img="target: !.uk-slideshow-items" />
+                                                    </li>
+                                                </stl:each>
+                                            </ul> <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a> <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </stl:itemTemplate>
+                    <stl:itemTemplate type="AlternatingItem">
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                                <div class="uk-card-badge uk-label uk-label-success">版本:V{content.subtitle}</div>
+                                <div class="uk-grid-small" data-uk-grid>
+                                    <div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle"> <span data-uk-icon="icon: {content.icontype}; ratio: 2.6"></span> </div>
+                                    <div class="uk-width-expand">
+                                        <h3 class="uk-card-title uk-margin-remove"> <span uk-tooltip="此版本作者：{content.author}"> {content.title} </span> </h3>
+                                        <p class="uk-text-muted uk-margin-remove uk-text-small"> 时间：<stl:content type="adddate" formatString="yyyy年MM月dd日 HH时mm分ss秒"></stl:content>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>下载链接：<a href="{content.source}" uk-tooltip="请先联系售前团队获得下载密码~" target="_black">{content.source} </a></p> <a href="#modal-center-{content.ID}" uk-toggle>
+                                    <stl:image></stl:image>
+                                </a>
+                                <div id="modal-center-{content.ID}" class="uk-flex-top" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"> <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                                            <ul class="uk-slideshow-items">
+                                                <stl:each type="imageUrl">
+                                                    <li>
+                                                        <stl:image alt="" uk-cover uk-img="target: !.uk-slideshow-items" />
+                                                    </li>
+                                                </stl:each>
+                                            </ul> <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a> <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </stl:itemTemplate>
+                </stl:contents>
+            </div>
+        </div>
+    </div>
+    </div>
+    <stl:include file="@/include/nav.html"></stl:include>
+    <stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>
