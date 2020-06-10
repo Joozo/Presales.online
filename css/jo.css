@@ -81,3 +81,7 @@
         padding: 40px 40px;
     }
 }
+.jo-bg-000 {
+    background-color: rgba(0,0,0,0.6);
+    padding: 40px 20px;
+}
