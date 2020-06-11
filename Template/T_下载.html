@@ -15,15 +15,16 @@
                 <div class="uk-width-expand">
                     <h1 class="uk-article-title uk-margin-remove">{channel.Title} <div class="uk-label uk-label-danger uk-visible@m">下载密码不定期更新，下载前请和售前同事确认最新密码</div>
                     </h1>
-                    <!-- <p class="uk-text-lead uk-text-muted uk-margin-small-top">{channel.description}</p> -->
+                    <p class="uk-text-lead uk-text-muted uk-margin-small-top">{channel.description}</p>
                 </div>
             </div> <!--  产品资料下载  -->
             <div class="uk-margin">
-                <ul class="uk-child-width-expand uk-tab-bottom" uk-tab>
-                    <stl:channels>
-                        <li class="uk-text-lead uk-button uk-button-success"><a href="javascript:;" class="uk-text-large"> {channel.title} - <stl:count type="Contents" scope="all" /></a></li>
-                    </stl:channels>
-                </ul>
+             
+                <div uk-switcher="animation: uk-animation-fade; toggle: > *">
+                <stl:channels channelIndex="下载">
+                    <button class="uk-button uk-button-default uk-width-1-5" type="button">{channel.title} <span class="uk-badge"><stl:count type="Contents" scope="All"></stl:count></span></button>
+                </stl:channels>
+            </div>
                 <ul class="uk-switcher uk-margin">
                     <stl:channels>
                         <li>

@@ -15,21 +15,22 @@
                 <div class="uk-width-expand">
                     <h1 class="uk-article-title uk-margin-remove">下载 <div class="uk-label uk-label-danger uk-visible@m">下载密码不定期更新，下载前请和售前同事确认最新密码</div>
                     </h1>
-                    <!-- <p class="uk-text-lead uk-text-muted uk-margin-small-top">在这里可以下载最新版本各产品线产品介绍、行业解决方案、标准文档模版等~</p> -->
+                    <p class="uk-text-lead uk-text-muted uk-margin-small-top">在这里可以下载最新版本各产品线产品介绍、行业解决方案、标准文档模版等~</p>
                 </div>
             </div> <!--  产品资料下载  -->
             <div class="uk-margin">
-                <ul class="uk-child-width-expand uk-tab-bottom" uk-tab>
-                    
-                        <li class="uk-text-lead uk-button uk-button-success"><a href="javascript:;" class="uk-text-large"> 解决方案 - 9</a></li>
-                    
-                        <li class="uk-text-lead uk-button uk-button-success"><a href="javascript:;" class="uk-text-large"> 云通信 - 5</a></li>
-                    
-                        <li class="uk-text-lead uk-button uk-button-success"><a href="javascript:;" class="uk-text-large"> 移动营销 - 3</a></li>
-                    
-                        <li class="uk-text-lead uk-button uk-button-success"><a href="javascript:;" class="uk-text-large"> 企业资料 - 4</a></li>
-                    
-                </ul>
+             
+                <div uk-switcher="animation: uk-animation-fade; toggle: > *">
+                
+                    <button class="uk-button uk-button-default uk-width-1-5" type="button">解决方案 <span class="uk-badge">9</span></button>
+                
+                    <button class="uk-button uk-button-default uk-width-1-5" type="button">云通信 <span class="uk-badge">5</span></button>
+                
+                    <button class="uk-button uk-button-default uk-width-1-5" type="button">移动营销 <span class="uk-badge">3</span></button>
+                
+                    <button class="uk-button uk-button-default uk-width-1-5" type="button">企业资料 <span class="uk-badge">4</span></button>
+                
+            </div>
                 <ul class="uk-switcher uk-margin">
                     
                         <li>
@@ -820,4 +821,5 @@
 </body>
 
 </html>
+
 <script type="text/javascript" language="javascript">document.ondblclick=function(x){location.href = '/api/sys/stl/actions/trigger?siteId=1&channelId=1028&contentId=0&fileTemplateId=0&isRedirect=True&returnUrl=' + encodeURIComponent(location.search);}</script>
