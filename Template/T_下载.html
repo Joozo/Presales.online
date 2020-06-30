@@ -13,35 +13,48 @@
             <div class="uk-grid-small" data-uk-grid>
                 <div class="uk-width-auto uk-text-primary"> <span class="uk-margin-xsmall-top" data-uk-icon="icon: {channel.Keywords}; ratio: 2.6"></span> </div>
                 <div class="uk-width-expand">
-                    <h1 class="uk-article-title uk-margin-remove">{channel.Title} <div class="uk-label uk-label-danger uk-visible@m">下载密码不定期更新，下载前请和售前同事确认最新密码</div>
+                    <h1 class="uk-article-title uk-margin-remove">{channel.Title} 
                     </h1>
-                    <p class="uk-text-lead uk-text-muted uk-margin-small-top">{channel.description}</p>
+                    <div class="uk-label uk-label-success uk-visible@m">密码不定期更新，下载前请和售前同事获取最新密码</div>
                 </div>
             </div> <!--  产品资料下载  -->
             <div class="uk-margin">
-             
-                <div uk-switcher="animation: uk-animation-fade; toggle: > *">
-                <stl:channels channelIndex="下载">
-                    <button class="uk-button uk-button-default" type="button">{channel.title} <span class="uk-badge"><stl:count type="Contents" scope="All"></stl:count></span></button>
-                </stl:channels>
-            </div>
+                <div class="uk-tab-bottom" uk-tab>
+                    <stl:channels channelIndex="下载">
+                        <li><a href="#">{channel.title} <span class="uk-badge">
+                                    <stl:count type="Contents" scope="All"></stl:count>
+                                </span></a>
+                        </li>
+                    </stl:channels>
+                </div>
                 <ul class="uk-switcher uk-margin">
                     <stl:channels>
+                        
                         <li>
+                            <stl:if type="CountOfChannels" op="GreatThan" value="true">
+                            <stl:yes>
+                                <p uk-margin>
+                                    <stl:channels>
+                                        <a href="{stl:a}" class="uk-button uk-button-default uk-button-small">{channel.title}</a>
+                                    </stl:channels>
+                                </p>
+                            </stl:yes>
+                        </stl:if>
                             <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
                                 <stl:contents isHot="true" scope="all">
                                     <div>
-                                        <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                                        <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-fade; repeat: true">
                                             <div class="uk-card-badge uk-label">版本:V{content.subtitle}</div>
+                                            <div class="uk-label uk-label-success jo-label">{channel.title}</div>
                                             <div class="uk-grid-small" data-uk-grid>
-                                                <div class="uk-width-auto uk-text-primary uk-flex uk-flex-middle"> <span data-uk-icon="icon: {content.icontype}; ratio: 2.6"></span> </div>
+                                                <div class="uk-width-auto uk-text-default uk-flex uk-flex-middle"> <span data-uk-icon="icon: {content.icontype}; ratio: 2.6"></span> </div>
                                                 <div class="uk-width-expand">
                                                     <h3 class="uk-card-title uk-margin-remove"> <a href="{stl:a}" uk-tooltip="此版本作者：{content.author}"> {content.title} </a> </h3>
                                                     <p class="uk-text-muted uk-margin-remove uk-text-small"> 时间：<stl:content type="adddate" formatString="yyyy年MM月dd日 HH时mm分ss秒"></stl:content>
                                                     </p>
                                                 </div>
                                             </div>
-                                            <p>下载链接：<a href="{content.source}" uk-tooltip="请先联系售前团队获得下载密码~" target="_black">{content.source} </a></p> <a href="#modal-center-{content.ID}" uk-toggle>
+                                            <p>下载地址：<a href="{content.source}" uk-tooltip="请先联系售前团队获得下载密码~" target="_black">{content.source} </a></p> <a href="#modal-center-{content.ID}" uk-toggle>
                                                 <stl:image></stl:image>
                                             </a>
                                             <div id="modal-center-{content.ID}" class="uk-flex-top" uk-modal>
@@ -53,7 +66,9 @@
                                                                     <stl:image alt="" uk-cover uk-img="target: !.uk-slideshow-items" />
                                                                 </li>
                                                             </stl:each>
-                                                        </ul> <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a> <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                                                        </ul>
+                                                        <a class="uk-position-center-left uk-position-small uk-hidden-hover jo-bg-000" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                                        <a class="uk-position-center-right uk-position-small uk-hidden-hover jo-bg-000" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                                                     </div>
                                                 </div>
                                             </div>
