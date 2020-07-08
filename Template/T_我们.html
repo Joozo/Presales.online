@@ -20,23 +20,23 @@
             <div class="uk-child-width-1-4@m" uk-grid>
                 <stl:channels>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-hover"> 
-                          <a class="uk-position-cover" href="{stl:a}"></a>
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <a class="uk-position-cover" href="{stl:a}"></a>
                             <div class="uk-card-media-top">
                                 <div class="uk-inline-clip uk-transition-toggle" tabindex="0"> <img src="{channel.imageUrl}" alt="{channel.title}" class="uk-width-1-1"> <img class="uk-transition-scale-up uk-position-cover" src="{channel.dtu}" alt="{channel.title}" class="uk-width-1-1"> </div>
                             </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title uk-text-center">{channel.hiname}</h3>
-                                <p class="uk-margin-top uk-text-center">
-                                    <stl:contents channelName="锦旗">
-                                        <a href="javascript:;" title="{content.title}" class="jo-flag">&nbsp;</a>
-                                    </stl:contents>
-                                </p>
-                                <p class="uk-text-center">
+                            <div class="uk-card-body" style="padding: 10px;">
+                                <h3 class="uk-card-title uk-text-center uk-margin-remove">{channel.hiname}</h3>
+                                <!-- <p class="uk-text-center">
                                     <stl:channel type="content" iscleartags="true"></stl:channel>
-                                </p>
+                                </p> -->
                             </div>
                         </div>
+                        <p class="uk-margin-top uk-text-center">
+                            <stl:contents channelName="锦旗">
+                                <a href="javascript:;" uk-tooltip="title: {content.title};" class="jo-flag">&nbsp;</a>
+                            </stl:contents>
+                        </p>
                     </div>
                 </stl:channels>
             </div>
