@@ -24,7 +24,7 @@ a:hover {
 
 a,
 .uk-link {
-    color: #3CA55C;
+    color: #2196f3;
     text-decoration: none;
     cursor: pointer;
 }
@@ -33,7 +33,7 @@ a:hover,
 .uk-link:hover,
 .uk-link-toggle:hover .uk-link,
 .uk-link-toggle:focus .uk-link {
-    color: #3CA55C;
+    color: #2196f3;
     text-decoration: underline;
 }
 
@@ -415,44 +415,7 @@ template {
 }
 
 /* ======================================================================== Component: Link ========================================================================== */
-.count_num {
-    display: inline-block;
-    background-color: #ccc;
-    color: #000;
-    font-size: 0.4em;
-    padding: 0 5px;
-    border-radius: 5px;
-}
 
-.uk-width-expand sup {
-    font-size: 0.5em;
-    color: red;
-}
-
-.jo-color .uk-text-primary {
-    color: #003333 !important;
-}
-
-.jo-left {
-    text-align: left;
-}
-
-.jo-block span {
-    color: #09f;
-    display: inline-block;
-}
-
-.jo-gre {
-    color: #009966 !important;
-}
-
-.jo-red {
-    color: #CC0033 !important;
-}
-
-.jo-mar {
-    margin-top: 10px !important;
-}
 
 /* Muted ========================================================================== */
 a.uk-link-muted,
@@ -490,7 +453,7 @@ a.uk-link-heading:hover,
 .uk-link-heading a:hover,
 .uk-link-toggle:hover .uk-link-heading,
 .uk-link-toggle:focus .uk-link-heading {
-    color: #3CA55C;
+    color: #2196f3;
     text-decoration: none;
 }
 
@@ -1438,7 +1401,7 @@ button.uk-icon:not(:disabled) {
     outline: none;
     background-color: #fff;
     color: #67607c;
-    border-color: #3CA55C;
+    border-color: #2196f3;
 }
 
 /* Disabled */
@@ -1626,14 +1589,14 @@ select.uk-form-width-xsmall {
 .uk-radio:focus,
 .uk-checkbox:focus {
     outline: none;
-    border-color: #3CA55C;
+    border-color: #2196f3;
 }
 
 /* * Checked */
 .uk-radio:checked,
 .uk-checkbox:checked,
 .uk-checkbox:indeterminate {
-    background-color: #3CA55C;
+    background-color: #2196f3;
     border-color: transparent;
 }
 
@@ -1890,12 +1853,12 @@ select.uk-form-width-xsmall {
 .uk-button-default.uk-active {
     background-color: transparent;
     color: #333;
-    border-color: #ceefe4;
+    border-color: #f44336;
 }
 
 /* * Primary */
 .uk-button-primary {
-    background-color: #3CA55C;
+    background-color: #2196f3;
     color: #fff;
     border: 1px solid transparent;
 }
@@ -2028,7 +1991,7 @@ select.uk-form-width-xsmall {
     line-height: 1.5;
     background: none;
     /* 2 */
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 /* Hover + Focus */
@@ -2057,22 +2020,22 @@ select.uk-form-width-xsmall {
 
 .uk-button-primary-outline {
     background-color: transparent;
-    color: #3CA55C;
-    border: 1px solid #3CA55C;
+    color: #2196f3;
+    border: 1px solid #2196f3;
 }
 
 .uk-button-primary-outline:hover,
 .uk-button-primary-outline:focus {
-    background-color: #3CA55C;
+    background-color: #2196f3;
     color: #fff;
-    border: 1px solid #3CA55C;
+    border: 1px solid #2196f3;
 }
 
 .uk-button-primary-outline:active,
 .uk-button-primary-outline.uk-active {
-    background-color: #3CA55C;
+    background-color: #2196f3;
     color: #fff;
-    border: 1px solid #3CA55C;
+    border: 1px solid #2196f3;
 }
 
 .uk-light .uk-button-primary-outline,
@@ -2232,7 +2195,7 @@ select.uk-form-width-xsmall {
 
 /* * Primary */
 .uk-section-primary {
-    background: #3CA55C;
+    background: #2196f3;
 }
 
 /* * Secondary */
@@ -2914,7 +2877,7 @@ select.uk-form-width-xsmall {
 
 /* * Primary */
 .uk-tile-primary {
-    background: #3CA55C;
+    background: #2196f3;
 }
 
 /* * Secondary */
@@ -3035,7 +2998,7 @@ select.uk-form-width-xsmall {
 
 /* * Primary */
 .uk-card-primary {
-    background: #3CA55C;
+    background: #2196f3;
     color: #fff;
     box-shadow: 0 5px 15px rgba(88, 58, 188, 0.09);
 }
@@ -3045,7 +3008,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-primary.uk-card-hover:hover {
-    background-color: #3CA55C;
+    background-color: #2196f3;
     box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
@@ -3244,7 +3207,7 @@ select.uk-form-width-xsmall {
 /* * Primary */
 .uk-alert-primary {
     background: #dcd5f1;
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 /* * Success */
@@ -3295,7 +3258,7 @@ select.uk-form-width-xsmall {
     border-radius: 500px;
     vertical-align: middle;
     /* 1 */
-    background: #3CA55C;
+    background: #2196f3;
     color: #fff;
     font-size: 0.875rem;
     /* 2 */
@@ -3316,7 +3279,7 @@ select.uk-form-width-xsmall {
 .uk-label {
     display: inline-block;
     padding: 0 10px;
-    background: #3CA55C;
+    background: #2196f3;
     line-height: 1.5;
     font-size: 0.875rem;
     color: #fff;
@@ -3715,12 +3678,12 @@ select.uk-form-width-xsmall {
 
 .awesomplete li:hover mark {
     background: inherit;
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 .awesomplete li[aria-selected="true"] mark {
     background: inherit;
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 .awesomplete>ul {
@@ -3753,12 +3716,12 @@ select.uk-form-width-xsmall {
 
 .awesomplete>ul>li:hover {
     background: #f9f9fc;
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 .awesomplete>ul>li[aria-selected="true"] {
     background: #f9f9fc;
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 @supports (transform: scale(0)) {
@@ -3856,19 +3819,19 @@ ul.uk-nav-sub {
 
 /* * Items */
 .uk-nav-default>li>a {
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 /* Hover + Focus */
 .uk-nav-default>li>a:hover,
 .uk-nav-default>li>a:focus {
-    color: #3CA55C;
+    color: #2196f3;
     text-decoration: none;
 }
 
 /* Active */
 .uk-nav-default>li.uk-active>a {
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 /* * Header */
@@ -4216,12 +4179,12 @@ ul.uk-nav-sub {
 /* Hover + Focus */
 .uk-navbar-dropdown-nav>li>a:hover,
 .uk-navbar-dropdown-nav>li>a:focus {
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 /* Active */
 .uk-navbar-dropdown-nav>li.uk-active>a {
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 /* * Header */
@@ -4384,7 +4347,7 @@ ul.uk-nav-sub {
 
 /* Active */
 .uk-subnav-pill>.uk-active>a {
-    background-color: #3CA55C;
+    background-color: #2196f3;
     color: #fff;
 }
 
@@ -4549,7 +4512,7 @@ ul.uk-nav-sub {
 /* Active */
 .uk-tab>.uk-active>a {
     color: #333;
-    border-color: #3CA55C;
+    border-color: #2196f3;
 }
 
 /* Disabled */
@@ -4812,7 +4775,7 @@ ul.uk-nav-sub {
     display: block;
     font-size: 16px;
     line-height: 1.4;
-    color: #3CA55C;
+    color: #2196f3;
     overflow: hidden;
     border: solid 1px #ece9f8;
     background-color: #fff;
@@ -4840,7 +4803,7 @@ ul.uk-nav-sub {
 /* Hover + Focus */
 .uk-accordion-title:hover,
 .uk-accordion-title:focus {
-    color: #3CA55C;
+    color: #2196f3;
     text-decoration: none;
     outline: none;
 }
@@ -5808,7 +5771,7 @@ ul.uk-nav-sub {
 /* Style modifiers ========================================================================== */
 /* * Primary */
 .uk-notification-message-primary {
-    color: #3CA55C;
+    color: #2196f3;
 }
 
 /* * Success */
@@ -5932,16 +5895,16 @@ ul.uk-nav-sub {
 
 /* * Progress bar * 1. Remove right border in IE11 and Edge */
 .uk-progress::-webkit-progress-value {
-    background-color: #3CA55C;
+    background-color: #2196f3;
     transition: width 0.6s ease;
 }
 
 .uk-progress::-moz-progress-bar {
-    background-color: #3CA55C;
+    background-color: #2196f3;
 }
 
 .uk-progress::-ms-fill {
-    background-color: #3CA55C;
+    background-color: #2196f3;
     transition: width 0.6s ease;
     /* 1 */
     border: 0;
@@ -7171,7 +7134,7 @@ ul.uk-nav-sub {
 }
 
 .uk-text-primary {
-    color: #3CA55C !important;
+    color: #2196f3 !important;
 }
 
 .uk-text-secondary {
@@ -7199,12 +7162,12 @@ ul.uk-nav-sub {
     /* 2 */
     display: inline-block;
     /* 3 */
-    color: #3CA55C !important;
+    color: #2196f3 !important;
 }
 
 @supports (-webkit-background-clip: text) {
     .uk-text-background {
-        background-color: #3CA55C;
+        background-color: #2196f3;
     }
 }
 
@@ -7524,7 +7487,7 @@ iframe.uk-cover {
 }
 
 .uk-background-primary {
-    background-color: #3CA55C;
+    background-color: #2196f3;
 }
 
 .uk-background-secondary {
@@ -8307,7 +8270,7 @@ iframe.uk-cover {
         left: calc(30% - 2px);
         bottom: 0;
         width: 4px;
-        background: #3CA55C;
+        background: #2196f3;
     }
 
     .tm-timeline:after {
@@ -8345,7 +8308,7 @@ iframe.uk-cover {
         position: absolute;
         width: 20px;
         height: 20px;
-        border: 4px solid #3CA55C;
+        border: 4px solid #2196f3;
         background-color: #fff;
         border-radius: 100%;
         top: 0;
